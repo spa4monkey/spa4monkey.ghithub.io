@@ -32,7 +32,7 @@
       <div class ="contents">
         <p id="Record_number">レコードナンバー</p>
         <div class ="image_view">
-          <img src="" id="img" width="30%">
+          <img src="" id="img" width="20%">
         </div>
         <p id="Day">登録日</p>
         <p id="Spot">撮影場所</p>
@@ -66,6 +66,7 @@
          appId: "1:564083577144:web:c7190bc3dbf332ffc771cd",
          measurementId: "G-ZJFLXX596Y"
        };
+
 
       // firebaseのどの機能を使うか指定
       firebase.initializeApp(firebaseConfig);
@@ -125,7 +126,7 @@
       function modoru(){
         i = i - 1;
         if(i < 0){
-            i = 2;
+            i = 7;
           drawelements(i);
           }else{
           }
@@ -136,7 +137,7 @@
 
         function susumu(){
           i = i + 1;
-          if(i > 2){
+          if(i > 8){
               i = 0;
             drawelements(i);
             }else{
