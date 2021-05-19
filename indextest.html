@@ -32,7 +32,7 @@
       <div class ="contents">
         <p id="Record_number">レコードナンバー</p>
         <div class ="image_view">
-          <img src="" id="img" width="20%">
+          <img src="" id="img" width="30%">
         </div>
         <p id="Day">登録日</p>
         <p id="Spot">撮影場所</p>
@@ -78,7 +78,7 @@
 
       //　ここでfirestoreにあるデータを全部所得する
       window.onload = function(){
-        db.collection("users").get().then(function(querySnapshot) {
+        db.collection("users").orderBy("Record_number", "asc").get().then(function(querySnapshot) {
           querySnapshot.forEach(function(doc) {
               //console.log(doc.id, " => ", doc.data());
               var data = doc.data();
@@ -137,7 +137,7 @@
 
         function susumu(){
           i = i + 1;
-          if(i > 8){
+          if(i > 7){
               i = 0;
             drawelements(i);
             }else{
