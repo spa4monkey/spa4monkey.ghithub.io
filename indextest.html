@@ -32,8 +32,8 @@
       <div class ="contents">
         <p id="Record_number">レコードナンバー</p>
         <div class ="image_view">
-          <img src="" id="img" width="30%">
-        </div>
+          <img src="" id="img" width="30%";margin:0 auto;>
+        </div align="center">
         <p id="Day">登録日</p>
         <p id="Spot">撮影場所</p>
         <p id="Name">製品名</p>
@@ -126,7 +126,7 @@
       function modoru(){
         i = i - 1;
         if(i < 0){
-            i = 7;
+            i = 100;
           drawelements(i);
           }else{
           }
@@ -137,7 +137,7 @@
 
         function susumu(){
           i = i + 1;
-          if(i > 7){
+          if(i > 100){
               i = 0;
             drawelements(i);
             }else{
